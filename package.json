@@ -1,7 +1,7 @@
 {
   "name": "@exotjs/swagger",
-  "version": "0.0.1",
-  "description": "OpenAPI / Swagger plugin for Exot server.",
+  "version": "0.1.0",
+  "description": "OpenAPI / Swagger plugin for Exot.",
   "author": "Daniel Regeci",
   "license": "MIT",
   "keywords": [
@@ -27,7 +27,7 @@
     }
   },
   "dependencies": {
-    "@exotjs/exot": "^0.0.2"
+    "@exotjs/exot": "0.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
@@ -36,5 +36,8 @@
     "tsx": "^4.0.0",
     "typescript": "^5.2.2",
     "vitest": "^1.0.1"
+  },
+  "peerDependencies": {
+    "@exotjs/exot": ">= 0.1.0"
   }
 }

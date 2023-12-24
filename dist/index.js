@@ -44,8 +44,8 @@ export const swagger = (init) => {
         },
     });
     if (init.ui?.disabled !== true) {
-        exot.get('/swagger', ({ set }) => {
-            set.headers.set('content-type', 'text/html; charset=utf8');
+        exot.get('/swagger', ({ res }) => {
+            res.headers.set('content-type', 'text/html; charset=utf8');
             return createUI(init);
         }, {
             swagger: {
@@ -55,6 +55,7 @@ export const swagger = (init) => {
     }
     return exot;
 };
+export default swagger;
 function processRoute(route, params) {
     const parameters = [];
     if (params.length) {

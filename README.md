@@ -12,7 +12,7 @@ It adds two new endpoints:
 
 ```js
 import { Exot, t } from '@exotjs/exot';
-import swagger from '@exotjs/swagger';
+import { swagger } from '@exotjs/swagger';
 
 new Exot()
   // mount plugin

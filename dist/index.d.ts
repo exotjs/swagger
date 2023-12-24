@@ -54,5 +54,5 @@ export type HandlerSwaggerOptions = {
         tags?: string[];
     };
 };
-export declare const swagger: (init: SwaggerInit) => Exot<{}, {}, {}, HandlerSwaggerOptions, import("@exotjs/exot/types").ContextInterface<any, any, any, any, {}, {}>>;
-export {};
+export declare const swagger: (init: SwaggerInit) => Exot<{}, {}, HandlerSwaggerOptions, {}, import("@exotjs/exot/types").ContextInterface<{}, any, any, any, {}>>;
+export default swagger;
